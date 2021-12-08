@@ -28,11 +28,12 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 
 PM_START_TEXT = """
-*𝙷𝚢 {} , 𝙼𝚢 𝙽𝚊𝚖𝚎 𝚒𝚜 {}!*
+Hey i m Mia a powerfull group management bot
+just add me to your group and make me admin❤
 
-𝙸 𝚊𝚖 𝚊𝚗 *𝚂𝚄𝙿𝙴𝚁*  𝚐𝚛𝚘𝚞𝚙 𝚖𝚊𝚗𝚊𝚐𝚎𝚖𝚎𝚗𝚝 𝚋𝚘𝚝.
+hit /help for my commands
 
-𝚈𝚘𝚞 𝚌𝚊𝚗 𝚏𝚒𝚗𝚍 𝚝𝚑𝚎 𝚕𝚒𝚜𝚝 𝚘𝚏 𝚊𝚟𝚊𝚒𝚕𝚊𝚋𝚕𝚎 𝚌𝚘𝚖𝚖𝚊𝚗𝚍𝚜 𝚠𝚒𝚝𝚑 /help
+
 
 """
 
@@ -143,18 +144,18 @@ def start(bot: Bot, update: Update, args: List[str]):
             update.effective_message.reply_photo(
                 random.choice(START_PHOTTO),
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
-                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="𝙷𝙴𝙻𝙿",
+                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="commands",
                                                                        callback_data="help_back".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="𝙲𝙷𝙰𝙽𝙽𝙴𝙻",
-                                                                       url="t.me/M_STER_TECH")],
-                                                                                   [InlineKeyboardButton(text= "𝙳𝙴𝙿𝙻𝙾𝚈",
-                                                                       url="https://youtu.be/Bz8AUvN5bSo"),
-                                                                                   InlineKeyboardButton(text="𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴",
-                                                                       url="https://github.com/PANDITHAN/Evil-Inside")
+                                                                                   InlineKeyboardButton(text="updates",
+                                                                       url="t.me/team_lad")],
+                                                                                   [InlineKeyboardButton(text= "add me",
+                                                                       url="https://t.me/mia_ladbot?startgroup=true"),
+                                                                                   InlineKeyboardButton(text="support,
+                                                                       url="https://t.me/cat_of_tg")
                                                                                  ]]))
 
     else:
-        update.effective_message.reply_text("Yuss, I am Already Online")
+        update.effective_message.reply_text("Hey bae i m online")
 
 
 def send_start(bot, update):
