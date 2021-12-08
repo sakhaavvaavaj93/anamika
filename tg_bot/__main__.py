@@ -135,7 +135,6 @@ def start(bot: Bot, update: Update, args: List[str]):
                     send_settings(match.group(1), update.effective_user.id, False)
                 else:
                     send_settings(match.group(1), update.effective_user.id, True)
-
             elif args[0][1:].isdigit() and "rules" in IMPORTED:
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
@@ -150,7 +149,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                                                                        url="t.me/team_lad")],
                                                                                    [InlineKeyboardButton(text= "add me",
                                                                        url="https://t.me/mia_ladbot?startgroup=true"),
-                                                                                   InlineKeyboardButton(text="support,
+                                                                                   InlineKeyboardButton(text="owner",
                                                                        url="https://t.me/cat_of_tg")
                                                                                  ]]))
 
