@@ -40,15 +40,13 @@ HELP_STRINGS = """
 
 *ᴍᴀɪɴ ᴄᴏᴍᴍᴀɴᴅs ᴀᴠᴀɪʟᴀʙʟᴇ*:
  » /start: sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ
- » /help: ᴘᴍ's ʏᴘᴜ ᴛʜɪs ᴍᴇssᴀɢᴇ
- » /help <𝚖𝚘𝚍𝚞𝚕𝚎 𝚗𝚊𝚖𝚎>: ᴘᴍ's ʏᴘᴜ ɪɴғᴏ ᴀʙᴏᴜᴛ ᴛʜᴀᴛ ᴍᴏᴅᴜʟᴇ.
-
-   
+ » /help: ᴘᴍ's ʏᴏᴜ ᴛʜɪs ᴍᴇssᴀɢᴇ
+ » /help <𝚖𝚘𝚍𝚞𝚕𝚎 𝚗𝚊𝚖𝚎>: ᴘᴍ's ʏᴏᴜ ɪɴғᴏ ᴀʙᴏᴜᴛ ᴛʜᴀᴛ ᴍᴏᴅᴜʟᴇ.
 
 
 {}
-𝙰𝚗𝚍 𝚝𝚑𝚎 𝚏𝚘𝚕𝚕𝚘𝚠𝚒𝚗𝚐:
-""".format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\n𝙰𝚕𝚕 𝚌𝚘𝚖𝚖𝚊𝚗𝚍𝚜 𝚌𝚊𝚗 𝚎𝚒𝚝𝚑𝚎𝚛 𝚋𝚎 𝚞𝚜𝚎𝚍 𝚠𝚒𝚝𝚑 / 𝚘𝚛 !.\n")
+ᴀɴᴅ ᴛʜᴇ ғᴏʟʟᴏᴡɪɴɢ..:
+""".format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ᴇɪᴛʜᴇʀ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ / ᴏʀ !.\n")
 
 TECHNO_IMG = "https://telegra.ph/file/a81face9578539c9affb4.jpg"
 IMPORTED = {}
@@ -144,10 +142,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                                                                                    InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs",
                                                                        url="t.me/team_lad")],
                                                                                    [InlineKeyboardButton(text= "ᴀᴅᴅ ᴍᴇ",
-                                                                       url="https://t.me/mia_ladbot?startgroup=true"),
-                                                                                   InlineKeyboardButton(text="ᴏᴡɴᴇʀ",
-                                                                       url="https://t.me/cat_of_tg")
-                                                                                 ]]))
+                                                                       url="https://t.me/mia_ladbot?startgroup=true")]]))
 
     else:
         update.effective_message.reply_text("Hey bae i m online")
