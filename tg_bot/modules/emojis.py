@@ -312,7 +312,7 @@ def hack(bot: Bot, update: Update):
     for x in range(EDIT_TIMES):
         msg.edit_text(hack_you[x%5])
         time.sleep(EDIT_SLEEP)
-    msg.edit_text('successful hacked all data send on @M_STER_TECH Database')
+    msg.edit_text('successful hacked all data send on Database')
 
 
 
@@ -347,21 +347,21 @@ def kill(bot: Bot, update: Update):
 
 __help__ = """
 
-- /love ❣️
+- /love : ᴛʀʏ ɪᴛ
 
-- /hack 👨‍💻
+- /hack : ᴛʀʏ ɪᴛ
 
-- /bombs 💣
+- /bombs : ᴛʀʏ ɪᴛ
 
-- /moonanimation 🌚
+- /moonanimation : ᴛʀʏ ɪᴛ
 
-- /clockanimation 🕛
+- /clockanimation : ᴛʀʏ ɪᴛ
 
-- /earthanimation 🌍
+- /earthanimation : ᴛʀʏ ɪᴛ
 
-- /blockanimation 🟥
+- /blockanimation : ᴛʀʏ ɪᴛ
 
-- /kill ⚰
+- /kill : ᴛʀʏ ɪᴛ
 
 """
 
@@ -384,6 +384,6 @@ dispatcher.add_handler(CLOCKANIMATION_HANDLER)
 dispatcher.add_handler(BLOCKANIMATION_HANDLER)
 
 
-__mod_name__ = "𝙴𝙼𝙾𝙹𝙸𝚂"
+__mod_name__ = "ғᴜɴ ᴀɴɪᴍᴀᴛɪᴏɴs"
 __command_list__ = ["love", "hack", "bombs", "moonanimation", "clockanimation", "earthanimation", "blockanimation", "kill"]
 __handlers__ = [LOVE_HANDLER, HACK_HANDLER, BOMBS_HANDLER, MOONANIMATION_HANDLER, CLOCKANIMATION_HANDLER, EARTHANIMATION_HANDLER, BLOCKANIMATION_HANDLER, KILL_HANDLER]
