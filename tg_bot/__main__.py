@@ -29,9 +29,9 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 ʜᴇʏ ɪ ᴍ ᴍɪᴀ ɪ ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ᴡɪᴛʜ ᴍᴀɴᴀɢɪɴɢ ʏᴏᴜʀ ɢʀᴏᴜᴏ 
- ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 
+ ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs
 
-ʜɪʏ /help ғᴏʀ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ʜᴇʟᴘ
+ʜɪᴛ /help ғᴏʀ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ʜᴇʟᴘ
 """
 
 HELP_STRINGS = """
