@@ -28,26 +28,22 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 
 PM_START_TEXT = """
-Hey i m Mia a powerfull group management bot
-just add me to your group and make me admin❤
+ʜᴇʏ ɪ ᴍ ᴍɪᴀ ɪ ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ᴡɪᴛʜ ᴍᴀɴᴀɢɪɴɢ ʏᴏᴜʀ ɢʀᴏᴜᴏ 
+ ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 
 
-hit /help for my commands
-
-
-
+ʜɪʏ /help ғᴏʀ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ʜᴇʟᴘ
 """
 
 HELP_STRINGS = """
 
-𝙷𝙴𝙻𝙻𝙾 𝚃𝙷𝙴𝚁𝙴 𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 *{}*
+ʜᴇʟʟᴏ ᴛʜᴇʀᴇ ᴍʏ ɴᴀᴍᴇ ɪs *{}*
 
-*𝙼𝚊𝚒𝚗* 𝚌𝚘𝚖𝚖𝚊𝚗𝚍𝚜  𝚊𝚟𝚊𝚒𝚕𝚊𝚋𝚕𝚎:
- - /start: 𝚜𝚝𝚊𝚛𝚝 𝚝𝚑𝚎 𝚋𝚘𝚝
- - /help: 𝙿𝙼'𝚂 𝚈𝙾𝚄 𝚃𝙷𝙸𝚂 𝙼𝙴𝚂𝚂𝙰𝙶𝙴
- - /help <𝚖𝚘𝚍𝚞𝚕𝚎 𝚗𝚊𝚖𝚎>: 𝙿𝙼'𝚜 𝚢𝚘𝚞 𝚒𝚗𝚏𝚘 𝚊𝚋𝚘𝚞𝚝 𝚝𝚑𝚊𝚝 module.
- - /settings:
-   - 𝚒𝚗 𝙿𝙼: 𝚠𝚒𝚕𝚕 𝚜𝚎𝚗𝚍 𝚢𝚘𝚞 𝚢𝚘𝚞𝚛 𝚜𝚎𝚝𝚝𝚒𝚗𝚐𝚜 𝚏𝚘𝚛 𝚊𝚕𝚕 𝚜𝚞𝚙𝚙𝚘𝚛𝚝𝚎𝚍 𝚖𝚘𝚍𝚞𝚕𝚎𝚜.
-   - 𝚒𝚗 𝚊 𝚐𝚛𝚘𝚞𝚙: 𝚠𝚒𝚕𝚕 𝚛𝚎𝚍𝚒𝚛𝚎𝚌𝚝 𝚢𝚘𝚞 𝚝𝚘 𝚙𝚖, 𝚠𝚒𝚝𝚑 𝚊𝚕𝚕 𝚝𝚑𝚊𝚝 𝚌𝚑𝚊𝚝'𝚜 𝚜𝚎𝚝𝚝𝚒𝚗𝚐𝚜.
+*ᴍᴀɪɴ ᴄᴏᴍᴍᴀɴᴅs ᴀᴠᴀɪʟᴀʙʟᴇ*:
+ » /start: sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ
+ » /help: ᴘᴍ's ʏᴘᴜ ᴛʜɪs ᴍᴇssᴀɢᴇ
+ » /help <𝚖𝚘𝚍𝚞𝚕𝚎 𝚗𝚊𝚖𝚎>: ᴘᴍ's ʏᴘᴜ ɪɴғᴏ ᴀʙᴏᴜᴛ ᴛʜᴀᴛ ᴍᴏᴅᴜʟᴇ.
+
+   
 
 
 {}
@@ -143,13 +139,13 @@ def start(bot: Bot, update: Update, args: List[str]):
             update.effective_message.reply_photo(
                 random.choice(START_PHOTTO),
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
-                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="commands",
+                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="ᴄᴏᴍᴍᴀɴᴅs",
                                                                        callback_data="help_back".format(bot.username)),
-                                                                                   InlineKeyboardButton(text="updates",
+                                                                                   InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs",
                                                                        url="t.me/team_lad")],
-                                                                                   [InlineKeyboardButton(text= "add me",
+                                                                                   [InlineKeyboardButton(text= "ᴀᴅᴅ ᴍᴇ",
                                                                        url="https://t.me/mia_ladbot?startgroup=true"),
-                                                                                   InlineKeyboardButton(text="owner",
+                                                                                   InlineKeyboardButton(text="ᴏᴡɴᴇʀ",
                                                                        url="https://t.me/cat_of_tg")
                                                                                  ]]))
 
