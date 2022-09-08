@@ -24,19 +24,20 @@
       },
       "ENV": {
          "description": "Setting this to ANYTHING will enable environment variables.",
-         "value": ""
+         "value": "ANYTHING"
       },
       "SQLALCHEMY_DATABASE_URI": {
          "description": "Your postgres sql db, empty this field if you dont have one. Watch Video (check out Redme.md)",
-         "value": ""
+         "value": "",
+         "required": false
       },      
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
-         "value": ""
+         "value": "5414162824"
       },
       "OWNER_NAME": {
          "description": "Your username",
-         "value": "PANDITHAN"
+         "value": "FULLY_CRUAL_MIND"
       },
       "DEV_USERS": {
          "description": "ID of users who are Dev (can use /py etc.)",
@@ -49,7 +50,7 @@
       },
       "GBAN_LOGS": {
          "description": "Gban log channel, include the hyphen too: ex: -123456",
-         "value": "-123"
+         "value": "-1001792513216"
       },
       "CASH_API_KEY": {
          "description": "Required for currency converter",
@@ -57,11 +58,11 @@
       },
       "TIME_API_KEY": {
          "description": "Required for timezone information Watch Video (check out Redme.md)",
-         "value": ""
+         "value": "-xyz"
       },
       "AI_API_KEY": {
          "description": "for activate chatbot",
-         "value": "x_y_z"
+         "value": "-xyz"
       },
       "API_OPENWEATHER": {
          "description": "Required for weather information Watch Video (check out Redme.md)",
@@ -89,7 +90,7 @@
       "TOKEN": {
          "description": "Your bot token.",
          "required": true,
-         "value": ""
+         "value": "1913023890:AAFNrOsZnhyq2rvdfdjx-RP0AgwzjWu_blg"
       },
       "URL": {
          "description": "The Heroku App URL :-  https://<appname>.herokuapp.com/",
